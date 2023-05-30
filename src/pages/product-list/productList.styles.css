@@ -1,0 +1,120 @@
+.product-list {
+    min-height: 100vh;
+    padding-top: 20px;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    /* background-color: rgb(13, 5, 94); */
+    width: 100%;
+}
+
+.form-list {
+    width: 92%;
+    min-height: 100vh;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    /* background-color: #fff; */
+    margin-bottom: 50px;
+}
+
+
+.header {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    width: 50%;
+}
+
+.fillter-box {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+}
+
+.primary-btn svg {
+    width: 20px;
+    /* color: #fff; */
+}
+/* 
+.primary-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    color: #fff;
+    
+} */
+
+.filter-box__input-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.filter-box__input-container .input {
+    width: 100%;
+}
+
+.filter-box__input-container .label {
+    width: 150px;
+}
+
+.row-item {
+    display: flex;
+    width: 95%;
+    margin: 0 auto;
+    padding: 20px;
+    flex-direction: column;
+    border-radius: 7px;
+    gap: 20px;
+    position: relative;
+    box-shadow: 0 3px 5px #dcdcdc;
+    border: 1px solid #dcdcdc;
+}
+
+.header-row-item {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.button {
+    display: flex;
+    gap: 10px;
+}
+
+.body-row-item {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.body-row-item div {
+    width: 15%;
+}
+
+.save-file-excel {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+}
+
+svg {
+    transform: scale(0.7);
+}
+
+.ufc-vaf {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.ufc-vaf span {
+    width: 30%;
+}

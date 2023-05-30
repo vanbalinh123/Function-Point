@@ -1,0 +1,143 @@
+.product-detail {
+    min-height: 100vh;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 100%;
+}
+
+h2 {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* color: #fff; */
+}
+
+form {
+    display: flex;
+    width: 92%;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    border-radius: 7px;
+    /* background-color: #fff; */
+}
+
+.label {
+    font-weight: 600;
+    /* color: #334155; */
+}
+
+.form-box__input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.input {
+    height: 40px;
+    padding-left: 10px;
+    outline: none;
+    border: none;
+    border: 1px solid #dcdcdc;
+    border-radius: 5px;
+    box-shadow: 0 3px 5px #dcdcdc;
+}
+
+.save {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.primary-btn {
+    padding: 10px 20px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    color: #696969;
+    box-shadow: 0 3px 5px #dcdcdc;
+    transition: all 0.4s;
+}
+
+
+.primary-btn:hover {
+    cursor: pointer;
+    background-color: #dcdcdc;
+}
+
+.func-weight {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.choose-weight {
+    padding: 5px;
+    border: none;
+    border: 1px solid #dcdcdc;
+    box-shadow: 0 3px 5px #dcdcdc;
+    border-radius: 5px;
+}
+
+.form-input {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.form-input .input {
+    width: 100%;
+}
+
+.form-factor {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.factor {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+select {
+    color: #696969;
+}
+
+option {
+    color: #696969;
+}
+
+.name-item {
+    width: 60%;
+    padding-left: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.label--error {
+    color: #e03131;
+}
+
+.line {
+    width: 95%;
+    height: 1px;
+    background-color: #dcdcdc;
+    margin: 0 auto;
+}
+
+.pad {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.input-line {
+    padding: 7px 0px;
+}
