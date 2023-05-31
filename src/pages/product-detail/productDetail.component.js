@@ -56,6 +56,40 @@ const ProductDetail = () => {
     const [textLanguage, setTextLanguage] = useState('');
     const [lineOfDay, setLineOfDay] = useState('');
 
+    useEffect(() => {
+        setName('');
+        setWeight('Low');
+        setEi('');
+        setWeightEi('');
+        setEo('');
+        setWeightEo('');
+        setEq('');
+        setWeightEq('');
+        setIlf('');
+        setWeightIlf('');
+        setEif('');
+        setWeightEif('')
+
+        setDc('0');
+        setDdp('0');
+        setPer('0');
+        setHuc('0');
+        setTr('0');
+        setOde('0');
+        setEue('0');
+        setOlu('0');
+        setCp('0');
+        setReu('0');
+        setIe('0');
+        setOe('0');
+        setMs('0');
+        setFc('0');
+
+        setVl('')
+        setTextLanguage('')
+        setLineOfDay('')
+    }, [idParam])
+
 
     useEffect(() => {
         if(idParam !== 'new') {

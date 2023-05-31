@@ -60,6 +60,7 @@ a {
     align-items: center;
     background-color: #fff;
     padding-left: 5%;
+    border: none;
     transition: all 0.4s;
     
 }
@@ -71,6 +72,8 @@ a {
 
 .isActive {
     background-color: #dcdcdc;
+    /* box-shadow: 0 3px 5px #696969; */
+    /* box-shadow: 0 3px 5px #dcdcdc; */
 }
 
 .container {

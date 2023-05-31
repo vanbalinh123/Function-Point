@@ -40,7 +40,7 @@ const ProductList = () => {
       // Tạo thẻ <a> để tải xuống file
       const downloadLink = document.createElement('a');
       downloadLink.href = fileURL;
-      downloadLink.download = 'file.txt'; // Tên file muốn lưu
+      downloadLink.download = `${item.name}.txt`; // Tên file muốn lưu
       
       // Thêm thẻ <a> vào DOM và kích hoạt tải xuống
       document.body.appendChild(downloadLink);
@@ -57,7 +57,7 @@ const ProductList = () => {
         const isConfirmed = window.confirm(`Do you want to delete (id=${id}) or not?`);
         if(isConfirmed) {
             dispatch(deletedProduct(id));
-            dispatch(productDeleted(id))
+            dispatch(productDeleted(id));
         }
     }
 

@@ -36,17 +36,37 @@ const slice = createSlice({
     }
 })
 
+// export const fetchProduct = createAsyncThunk(
+//     'list/fetchProduct',
+//     async (product) => {
+//         let response;
+//         if(product.name !== '') {
+//             response = await fetch(`http://localhost:3000/lists?name=${product.name}`);
+//         } else {
+//             response = await fetch(`http://localhost:3000/lists?name?`);
+//         }
+//         // const response = await fetch(`http://localhost:3000/lists`);
+//         const data = await response.json();
+//         console.log(data)
+//         return data;
+//     }
+// )
 export const fetchProduct = createAsyncThunk(
     'list/fetchProduct',
     async (product) => {
-        console.log(product.name)
-        // const response = await fetch(`http://localhost:3000/lists?name=${product.name}`);
-        const response = await fetch(`http://localhost:3000/lists`);
+        let response;
+        if (product.name !== '') {
+            const encodedName = encodeURIComponent(product.name); // Encode chuỗi tìm kiếm
+            response = await fetch(`http://localhost:3000/lists?name_like=${encodedName}`);
+        } else {
+            response = await fetch(`http://localhost:3000/lists`);
+        }
         const data = await response.json();
         console.log(data)
         return data;
     }
 )
+
 
 export const saveNewProduct = createAsyncThunk(
     'list/saveNewProduct',
